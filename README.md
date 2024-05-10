@@ -19,7 +19,7 @@ composer require --dev vcian/laravel-code-insights
 ```
 ## <p style="font-family: 'CustomFont';">_Usage_</p>
 
-php artisan vendor:publish --tag=public
+php artisan vendor:publish
 <br>
 select "Vcian\LaravelCodeInsights\CodeGeneratorServiceProvider"
 <br>

@@ -179,6 +179,6 @@ class CodeDocController
         $segments = explode("\\", $class);
         $lastTwoSegments = array_slice($segments, -2);
 
-        return ($lastTwoSegments[0] ?? '') . '/' . ($lastTwoSegments[1] ?? '');
+        return ($class) ? ($lastTwoSegments[0] ?? '') . '/' . ($lastTwoSegments[1] ?? '') : '';
     }
 }
