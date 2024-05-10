@@ -19,10 +19,9 @@ class CodeGeneratorServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/Routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         $this->loadRoutesFrom(__DIR__ . '/Helpers/Helper.php');
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'laravel-code-insights');
-
         //Publish
         $this->publishes([__DIR__ . '/../resources/assets' => public_path(config('code-insights.public.folder').'/assets')], 'public');
         $this->publishes([

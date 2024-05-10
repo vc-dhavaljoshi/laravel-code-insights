@@ -12,8 +12,24 @@ return [
     */
 
     'path' => env('CODE_INSIGHTS_PATH', 'code-insights'),
-
     'public' => [
         'folder' => 'laravel-code-insights'
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Define Namespaces
+    |--------------------------------------------------------------------------
+    |
+    | The following array lists the "namespaces" that will be registered with
+    | laravel code insights.Feel free to customize those namespaces.
+    |
+    */
+    'namespaces' => [
+        'controllers' => 'App\\Http\\Controllers\\',
+        'models' => 'App\\Models\\',
+        'helpers' => 'App\\Http\\Helpers\\',
+        'repositories' => 'App\\Repositories\\',
+        'services' => 'App\\Services\\',
     ]
 ];
